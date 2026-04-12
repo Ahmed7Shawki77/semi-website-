@@ -1,0 +1,54 @@
+<DOCTYPE html>
+    <html lang="en">
+      <head>
+          <link rel="stylesheet" href="css/style.css">
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width,initial-scale=1.0">
+          <title>Add Courses</title>
+      </head>  
+      <body>
+       <header><h1> Add Courses page</h1> </header>
+       <nav class="nav_1">
+              <ul>
+                  <li><a href="index.html" target="_blank">HOME</a></li>
+                  <li><a href="courses.html" target="_blank">MY courses</a></li>
+                  <li><a href="add-courses.html">ADD_Courses</a></li>
+                  <li><a href="contact.html" target="_blank">contact us</a></li>
+              </ul>
+          </nav>
+          <main>
+              <section class="add_courses_section" >
+                 <form method="GET" class="form">
+                     <label for="course_name">Course Name:</label>
+                     <input id="course_name" type="text" placeholder="Enter course name" required>
+                     <label for="instructor">Instructor:</label>
+                     <input id="instructor" type="text" placeholder="Instructor Name" required >
+                     <label for="Credit_hours">Credit Hours</label>
+                       <select name="Credit_hour" id="Credit_hour" required>
+                           <option value="1">One hour</option>
+                           <option value="2"> Two hours</option>
+                           <option value="3"> Three hours</option>
+                       </select>
+                       <label for="Lecture_day">Lecture day</label>
+                       <select name="Lecture_day" id="Lecture_day" required>
+                           <option value="saturday">Saturday</option>
+                           <option value="sunday"> Sunday</option>
+                           <option value="monday">Monday</option>
+                           <option value="tuesday"> Tuesday</option>
+                           <option value="wednesday">Wednesday</option>
+                           <option value="thursday">Thursday</option>
+                           <option value="friday" disabled>Friday</option>
+                       </select>  
+                       <textarea name="notes" id="" cols="30" rows="10" placeholder="Take your notes"></textarea>
+                       <div class="button">
+                           <button class="b1" type="submit">Save</button>
+                           <button class="b2" type="reset">Empty</button>
+                       </div>
+                 </form>
+              </section>
+          </main>
+      </body>
+           <footer>
+               <p>&copy;2026  Ahmed mohamed shawki Capital university </p>
+        </footer>   
+    </html>
