@@ -194,3 +194,15 @@ form div {
   .contact_links{
       font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
+  @media screen and(
+      max-width: 768px)
+   { 
+  .home-section{ 
+        width: 100% !important;
+      max-width: 350px;
+      margin-bottom: 20px;    
+      flex-direction: column !important;
+      align-items: center;
+      padding: 10px;
+               }
+   }
