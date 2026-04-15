@@ -21,15 +21,21 @@ header p:hover{
 p{ 
     font-weight: bold;
 }
+@media screen and (max-width:480px){
  .nav_1 , ul{
+     flex-direction: column !important;
+     align-items: center!important;
+     padding: 10px 0px !important;
      list-style: none;
      margin: 0;
      padding: 0;
      display: flex;
      justify-content: center;
- }
- .nav_1 , ul , li {
-     padding: 15px 25px ;
+}
+ .nav_1,ul,li {
+     padding: 8px 0px !important ;
+     width: 100%;
+     text-align: center;
  }
  .nav_1 , ul , li , a {
      text-decoration: none;
@@ -46,18 +52,36 @@ p{
     padding: 40px;
     text-align: center;
  }
- .home-section,.table-section{ background: white;
-  padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 6px 10px rgba(0,0,0,0.4); 
-  transition: all 1s ease;
-  cursor:pointer;
+ .home-section,.table-section{
+    width:90%;
+    margin: 20px auto !important;
+    background: white;
+    padding: 15px !important;
+    border-radius: 15px;
+    display: block !important;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4); 
+    transition: all 1s ease;
+    cursor:pointer;
+ }
+ .home-section p{
+     width: 95% !important;
+     font-size: 20px;
  }
  .home-section:hover{ transform: scale(1.05);
      background: linear-gradient(90deg,#4b0082,#0000ff);
      color: white;
  }
- .table-section:hover{transform: scale(1.02);  
+ table{
+     display: block;
+     overflow-x: auto;
+     width: 100% !important;
+     font-size: 12px;
+ }
+ thead td, tbody td {
+     padding: 10px !important;
+ }
+ .table-section:hover{
+     transform: scale(1.02);  
      color: white;    
  }
  
@@ -65,8 +89,12 @@ p{
      transform: scale(1.05);
      color: white;  
  }
- 
- footer{ text-align: center;
+ .form{
+     width: 90% !important;
+     padding: 15px !important;
+ }
+ footer{ 
+  text-align: center;
   padding: 15px;
   background:  linear-gradient(90deg,#4b0082,#0000ff);
   color: white;
@@ -74,7 +102,7 @@ p{
   bottom: 0;
   width: 100%
  }
-table{ border: 5px ridge black;
+table{ border: 10px inset black;
     border-radius: 10px;
     width: 100%;
     border-collapse: collapse;
@@ -114,12 +142,21 @@ tbody tr:nth-child(even){
      color: #4b0082;
  }
  input,select,textarea{
-     width: 100%;
+     width: 100% !important;
      padding: 12px;
      margin-bottom: 20px;
      border: 2px solid #ccc;
      border-radius: 10px;
      box-sizing: border-box;
+ }
+ .contact_section{
+     flex-direction: column!important;
+     width: 100%;
+     padding: 20px 0px !important;
+ }
+ .contact_links a{
+     width: 80% !important;
+     margin: 10px auto !important;
  }
 form div {
      background:linear-gradient(90deg,#4b0082,#0000ff);
@@ -196,6 +233,8 @@ form div {
   }
   body{
       background-color:#a9a9a9;
+      overflow-x: hidden!important;
+      width: 100%;
   }
   @keyframes float{
       0%{
@@ -222,8 +261,4 @@ form div {
         margin-right: auto;
         box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
     }
-    @media (max-width: 768px){
-        nav{
-            align-items: center;
-        }
-    }
+}
