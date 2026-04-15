@@ -262,3 +262,240 @@ form div {
         box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
     }
 }
+ .nav_1 , ul{
+     flex-direction: row !important;
+     align-items: center!important;
+     padding: 5px 0px !important;
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: center;
+}
+ .nav_1,ul,li {
+     padding: 8px 0px !important ;
+     width: 100%;
+     text-align: center;
+ }
+ .nav_1 , ul , li , a {
+     text-decoration: none;
+     color:  linear-gradient(90deg,#4b0082,#0000ff);
+     font-weight: bold;
+     transition:0.3s;
+ }
+  nav a:hover{ background-color: black;
+  border: 5px inset #00695f;
+  border-radius: 10px;
+     color:#00695f ;
+ }
+ main{ 
+    padding: 40px;
+    text-align: center;
+ }
+ .home-section,.table-section{
+    width:90%;
+    margin: 20px auto !important;
+    background: white;
+    padding: 15px !important;
+    border-radius: 15px;
+    display: block !important;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.4); 
+    transition: all 1s ease;
+    cursor:pointer;
+ }
+ .home-section p{
+     width: 95% !important;
+     font-size: 20px;
+ }
+ .home-section:hover{ transform: scale(1.05);
+     background: linear-gradient(90deg,#4b0082,#0000ff);
+     color: white;
+ }
+ table{
+     width: 100% !important;
+     font-size: 12px;
+ }
+ thead td, tbody td {
+     padding: 10px !important;
+ }
+ .table-section:hover{
+     transform: scale(1.02);  
+     color: white;    
+ }
+ 
+ .add_courses_section:hover{
+     transform: scale(1.05);
+     color: white;  
+ }
+ .form{
+     width: 90% !important;
+     padding: 15px !important;
+ }
+ footer{ 
+  text-align: center;
+  padding: 15px;
+  background:  linear-gradient(90deg,#4b0082,#0000ff);
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%
+ }
+table{ border: 10px inset black;
+    border-radius: 10px;
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0px ;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+thead td {
+    border: 2px solid #ddd; 
+    padding: 20px;
+    text-align: left;
+    background-color:purple;
+    color: white;
+}
+tbody td:hover{   color: black;
+    background-color: #00695f;
+     transition: 0.5sec;
+}
+tbody tr:nth-child(even){
+    background-color: #e0e0e0 !important;
+}
+ .form{
+     background-color: white;
+     padding: 30px;
+     border-radius: 15px;
+     box-shadow: 0px 4px 20px rgba(0,0,0,0.4);
+     max-width: 500px;
+     margin: 40px auto;
+     transition: all 1s ease; 
+ }
+ 
+ label{
+     display: block;
+     margin-bottom: 8px;
+     font-weight: bold;
+     color: #4b0082;
+ }
+ input,select,textarea{
+     width: 100% !important;
+     padding: 12px;
+     margin-bottom: 20px;
+     border: 2px solid #ccc;
+     border-radius: 10px;
+     box-sizing: border-box;
+ }
+ .contact_section{
+     flex-direction: column!important;
+     width: 100%;
+     padding: 20px 0px !important;
+ }
+ .contact_links a{
+     width: 80% !important;
+     margin: 10px auto !important;
+ }
+form div {
+     background:linear-gradient(90deg,#4b0082,#0000ff);
+     color: white;
+     padding: 12px 25px;
+     border: none;
+     border-radius: 10px;
+     font-weight: bold;
+     transition:0.5sec;
+ }
+ ::placeholder{
+    font-weight: bold;
+     color: #00008B;
+     opacity: 0.7;
+     text-align: center;
+ }
+ .b1,.b2{
+     cursor: pointer;
+     color: black;
+ }
+ .b1:hover{
+     background-color: #00695f;
+     border-radius: 8px;
+     cursor: cell;
+     transform: translateY(-5px);
+     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+     transition:0.5sec;
+ }
+ .b2:hover{
+     background-color: #c21A09;
+     border-radius: 8px;
+     cursor: not-allowed;
+      transform: translateY(-5px);
+     box-shadow: 0 5px 10px rgba(0,0,0,0.4);
+     transition:0.5sec;
+ }
+ select,input{
+     cursor: pointer;
+     background-image: linear-gradient(to top, #f9f9f9,#fff );
+     border: 2px solid #4b0082;
+ }
+ .contact_links{
+     display: flex;
+     flex-direction: column;
+     align-items: left;
+     column-gap: 8px;
+     margin-top: 0px;
+     width: 50%;  
+ }
+ .contact_links a{
+     display: inline-block;
+     background-image: linear-gradient(90deg,#4b0082,#0000ff);
+     margin: 10px auto;
+     text-decoration: none;
+     color: black;
+     font-weight: bold;
+     padding: 12px;
+     border: 2px solid #000088;
+     border-radius: 25px;
+     width: 200px;
+ }
+  .contact_links a:hover{
+     color: #00695f;
+     background-image: linear-gradient(black,black);
+  }
+  .contact_section{ width: 80%;
+      display: flex;
+      justify-content: space-around;
+      align-items: flex-start;
+      padding: 40px;
+  }
+  .contact_links{
+      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+  body{
+      background-color:#a9a9a9;
+      overflow-x: hidden!important;
+      width: 100%;
+  }
+  @keyframes float{
+      0%{
+          transform: translateY(0px);
+      } 50%{
+           transform: translateY(-15px);
+      } 100%{
+          transform: translateY(0px);
+      }
+  }
+  .home-section{
+      animation: float 3s ease-in-out infinite;
+      display: inline-block;
+      width: 90%;
+  }
+    .home-section p{
+        color: #000000 ;
+        display: block;
+        padding: 15px;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+    }
